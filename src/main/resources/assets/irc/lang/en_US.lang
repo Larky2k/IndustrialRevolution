@@ -1,0 +1,28 @@
+itemGroup.ircCreative=Industrial Revolution Craft
+
+tile.copperOre.name=Copper Ore
+tile.zincOre.name=Zinc Ore
+tile.bentoniteOre.name=Bentonite Ore
+tile.copperBlock.name=Copper Block
+tile.steelBlock.name=Steel Block
+tile.forgingSand.name=Forging Sand
+tile.steel_anvil.name=Steel Anvil
+tile.slate.name=Slate
+
+
+item.steelIngot.name=Steel Ingot
+item.copperIngot.name=Copper Ingot
+item.zincIngot.name=Zinc Ingot
+item.bentoniteDust.name=Bentonite Dust
+item.coalDust.name=Coal Dust
+item.bentoniteClay.name=Bentonite Clay
+item.flintPickaxe.name=Flint Pickaxe
+item.flintAxe.name=Flint Axe
+item.flintSpade.name=Flint Shovel
+item.flintHoe.name=Flint Hoe
+item.flintSword.name=Flint Sword
+item.blacksmithHammer.name=Blacksmith Hammer
+item.handle.name=Handle
+item.plantFibre.name=Plant Fibre
+item.flintBlade.name=Flint Blade
+item.slateSlab.name=Slate Slab
