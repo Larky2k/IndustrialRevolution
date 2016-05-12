@@ -1,5 +1,10 @@
 package com.larky2k.irc.blocks;
 
+import com.larky2k.irc.IRCGlobal;
+//import com.larky2k.irc.blocks.custom.IRCBloomery;
+import com.larky2k.irc.blocks.custom.IRCBloomery;
+import com.larky2k.irc.blocks.custom.IRCCrate;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -15,12 +20,19 @@ public class IRCBlocks {
 	//Blocks
 	public static Block copperBlock;
 	public static Block steelBlock;
+	
+	//Furnace
+	public static Block bloomeryIdle;
+	public static Block bloomeryActive;
  	
 	//Forging Sand
 	public static Block forgingSand;
 	
 	//Anvil
 	public static Block steel_anvil;
+	
+	//Storage
+	public static Block crate;
 	
 	public static void initBlocks(){
 		
@@ -37,8 +49,15 @@ public class IRCBlocks {
 		//Forging Sand
 		GameRegistry.registerBlock(forgingSand = new IRCBlock("forgingSand", Material.sand, 0.5F, 0), "forgingSand");
 		
+		//Furnace
+		//GameRegistry.registerBlock(bloomeryIdle = new IRCBloomery(false, "bloomeryIdle").setCreativeTab(IRCGlobal.ircCreativeTab), "bloomeryIdle");
+		//GameRegistry.registerBlock(bloomeryActive = new IRCBloomery(true, "bloomeryActive"), "bloomeryActive");
+		
 		//Anvil
 		GameRegistry.registerBlock(steel_anvil = new IRCBlock("steel_anvil", Material.anvil, 5, 10), "steel_anvil");
+		
+		//Storage
+		GameRegistry.registerBlock(crate = new IRCCrate("crate", Material.wood, 1, 5), "crate");
 	
 	}
 

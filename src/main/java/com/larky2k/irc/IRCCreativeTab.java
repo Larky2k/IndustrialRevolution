@@ -16,3 +16,4 @@ public class IRCCreativeTab extends CreativeTabs {
 		return IRCItems.copperIngot;
 	}
 }
+//Item#getItemFromBlock(block)

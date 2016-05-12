@@ -1,0 +1,12 @@
+{
+    "parent": "irc:block/ircOrientable",
+    "textures": {
+        "particle": "irc:blocks/bloomeryFrontOn",
+        "down": "irc:blocks/bloomeryBottom",
+        "up": "irc:blocks/bloomeryTopOn",
+        "east": "irc:blocks/bloomerySide",
+        "west": "irc:blocks/bloomerySide"
+        "north": "irc:blocks/bloomeryFrontOn",
+        "south": "irc:blocks/bloomeryBack",    
+    }
+}

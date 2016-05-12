@@ -12,6 +12,15 @@ public class IRCItemRender {
 	
 	public static void registerItemRender() {
 		
+		//Food
+		regItem (IRCItems.foodPasty);
+		regItem (IRCItems.foodDough);
+		regItem (IRCItems.foodFlour);
+		regItem (IRCItems.foodSwede);
+		regItem (IRCItems.beefSkirt);
+		regItem (IRCItems.uncookedPasty);
+		regItem (IRCItems.pestleMortar);
+		
 		//Tools
 		regItem (IRCItems.flintPickaxe);
 		regItem (IRCItems.flintAxe);
@@ -25,6 +34,11 @@ public class IRCItemRender {
 		regItem (IRCItems.zincIngot);
 		regItem (IRCItems.steelIngot);
 		
+		//Plates
+		regItem (IRCItems.ironPlate);
+		regItem (IRCItems.copperPlate);
+		regItem (IRCItems.steelPlate);
+		
 		//Dusts
 		regItem (IRCItems.bentoniteDust);
 		regItem (IRCItems.coalDust);
@@ -32,11 +46,16 @@ public class IRCItemRender {
 		//Forging Sand
 		regItem (IRCItems.bentoniteClay);
 		
+		//Manual
+		regItem (IRCItems.engineeringLexicon);
+		
 		//Miscellaneous 
 		regItem (IRCItems.plantFibre);
 		regItem (IRCItems.handle);
 		regItem (IRCItems.flintBlade);
 		regItem (IRCItems.slateSlab);
+		regItem (IRCItems.stoneBowl);
+		
 	}
 	
 		private static void regItem(Item item) {

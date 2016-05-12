@@ -22,16 +22,20 @@ public final class IRCBlockRender {
 		regBlock (IRCBlocks.copperBlock);
 		regBlock (IRCBlocks.steelBlock);
 		
+		//Furnace
+		//regBlock (IRCBlocks.bloomeryIdle);
+		//regBlock (IRCBlocks.bloomeryActive);
+		
 		//Forging Sand
 		regBlock (IRCBlocks.forgingSand);
 		
 		//Anvil
-		//regBlock (IRCBlocks.steel_anvil);
+		regBlock (IRCBlocks.steel_anvil);
 		
 	}
 
 	private static void regBlock(Block block) {
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(IRCGlobal.MODID + ":" + block.getUnlocalizedName().substring(5), "inventory"));
-		
+	
 	}
 }

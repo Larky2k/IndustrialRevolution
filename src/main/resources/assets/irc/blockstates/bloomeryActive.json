@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "irc:bloomeryActive" },
+        "facing=south": { "model": "irc:bloomeryActive", "y": 180 },
+        "facing=west":  { "model": "irc:bloomeryActive", "y": 270 },
+        "facing=east":  { "model": "irc:bloomeryActive", "y": 90 }
+    }
+}

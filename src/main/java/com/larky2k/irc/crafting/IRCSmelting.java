@@ -9,9 +9,12 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class IRCSmelting {
 
 	public static void initSmelting(){
+		//Ingots
 		GameRegistry.addSmelting(IRCBlocks.copperOre, new ItemStack(IRCItems.copperIngot), 5);
 		GameRegistry.addSmelting(IRCBlocks.zincOre, new ItemStack(IRCItems.zincIngot), 5);
 		
+		//Food
+		GameRegistry.addSmelting(IRCItems.uncookedPasty, new ItemStack(IRCItems.foodPasty), 10);
 	}
 	
 }

@@ -4,8 +4,10 @@ import com.larky2k.irc.IRCGlobal;
 
 import net.minecraft.block.BlockFalling;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.properties.PropertyInteger;
+import net.minecraft.block.state.BlockState;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
@@ -32,9 +34,7 @@ public class IRCSteelAnvil extends BlockFalling
         return false;
     }
 
-    /**
-     * Used to determine ambient occlusion and culling when rebuilding chunks for render
-     */
+   
     public boolean isOpaqueCube()
     {
         return false;
@@ -46,6 +46,17 @@ public class IRCSteelAnvil extends BlockFalling
         return super.onBlockPlaced(worldIn, pos, facing, hitX, hitY, hitZ, meta, placer).withProperty(FACING, enumfacing).withProperty(DAMAGE, Integer.valueOf(meta >> 2));
     }
    
+    
+    public boolean shouldSideBeRendered(IBlockAccess worldIn, BlockPos pos, EnumFacing side)
+    {
+        return true;
+    }
+    
+    protected BlockState createBlockState()
+    {
+        return new BlockState(this, new IProperty[] {FACING, DAMAGE});
+    }
+        
     public void setBlockBoundsBasedOnState(IBlockAccess worldIn, BlockPos pos)
     {
         EnumFacing enumfacing = (EnumFacing)worldIn.getBlockState(pos).getValue(FACING);
